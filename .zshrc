@@ -107,8 +107,10 @@ source $ZSH/oh-my-zsh.sh
 alias cls=clear
 alias upd="sudo dnf update"
 alias uefiboot="systemctl reboot --firmware-setup"
+alias switch="pactl load-module module-loopback sink=alsa_output.pci-0000_0d_00.4.analog-stereo source=alsa_input.pci-0000_0d_00.4.analog-stereo.4 latency_msec=5"
 # Created by `userpath` on 2020-08-08 23:21:05
-export PATH="$PATH:/home/kateulator/.local/bin"
+export PATH="/home/kateulator/Documents/Playdate/PlaydateSDK/bin/:/home/kateulator/.local/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PLAYDATE_SDK_PATH=/home/kateulator/Documents/Playdate/PlaydateSDK
