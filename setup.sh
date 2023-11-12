@@ -18,6 +18,10 @@ sudo dnf install -y kitty krita zsh util-linux-user code steam libinput-devel me
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install com.discordapp.Discord com.plexamp.Plexamp com.mattjakeman.ExtensionManager org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 
+# install gnome extensions not available in repos
+pip3 install gnome-extensions-cli
+gnome-extensions-cli install 5489
+
 # disable activities hot corner
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 
